@@ -48,9 +48,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql)
-
   end
-
 
   def students_below_12th_grade
   end
