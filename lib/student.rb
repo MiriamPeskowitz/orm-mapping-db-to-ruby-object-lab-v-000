@@ -38,7 +38,7 @@ class Student
     end
   end
 
-  
+
   def count_all_students_in_grade_9
   end
 
@@ -54,7 +54,7 @@ class Student
   end
 
   def all_students_in_grade_X
-  end 
+  end
 
 
 
