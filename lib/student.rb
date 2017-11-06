@@ -93,10 +93,12 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = grade
+      WHERE grade = g?
+      ORDER BY students.id
     SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, grade).map do |row|
+      self.new_from_db(row)
   end
 
   def save
