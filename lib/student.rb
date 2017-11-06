@@ -97,7 +97,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = g?
+      WHERE grade = ?
       ORDER BY students.id
     SQL
 
