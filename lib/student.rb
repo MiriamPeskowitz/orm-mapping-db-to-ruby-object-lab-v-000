@@ -57,13 +57,11 @@ class Student
   def self.first_X_students_in_grade_10
   end
 
-  def first_X_students_in_grade_10
+  def self.first_X_students_in_grade_10
   end
 
-  def all_students_in_grade_X
+  def self.all_students_in_grade_X
   end
-
-
 
   def save
     sql = <<-SQL
